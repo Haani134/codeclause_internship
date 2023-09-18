@@ -20,7 +20,11 @@ function onConnected(socket) {
     socket.on('disconnect', () => {
         console.log('Socket disconnected',socket.id)
         socketsConected.delete(socket.id)
+
         io.emit('clients-total',socketsConected.size)
     })
-
+       socket.on('message', (data) => {
+        console.log(data)
+        socket.broadcast.emit('chat-message',data)
+       })
 }
