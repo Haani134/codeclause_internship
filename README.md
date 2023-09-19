@@ -1,5 +1,5 @@
 # codeclause_internship
-step 1 : IN terminal firt type 
+step 1 : In terminal firt type 
 npm install
 step 2: run this command
 npm run dev
