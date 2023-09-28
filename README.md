@@ -1,4 +1,6 @@
 # codeclause_internship
+
+ Basic chat application using websockets
 step 1 : In terminal firt type 
 npm install
 step 2: run this command
